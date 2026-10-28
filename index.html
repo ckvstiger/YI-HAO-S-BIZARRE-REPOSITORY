@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陳亦豪的奇妙冒險 | 數位商管跨領域人才自我介紹</title>
+<meta name="description" content="陳亦豪的自我介紹網站：熱愛商業經營、電子商務與智慧科技，以JOJO的奇妙冒險風格呈現。">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#ffd23f;--pink:#ff2e88;--purple:#5b1a8c;--deep:#1a0630;--cyan:#00e5d4;--ink:#0b0012}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--deep);color:#fff;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+ background:radial-gradient(circle at 20% 20%,#8a2be2 0,transparent 45%),radial-gradient(circle at 80% 70%,#ff2e88 0,transparent 40%),linear-gradient(135deg,#1a0630,#3b0d5c 50%,#0e2a4a)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.18;
+ background-image:radial-gradient(#fff 1.2px,transparent 1.3px);background-size:9px 9px}
+.bangers{font-family:'Bangers',cursive;letter-spacing:2px}
+
+/* nav */
+nav{position:fixed;top:0;width:100%;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;
+ background:rgba(11,0,18,.6);backdrop-filter:blur(10px);border-bottom:3px solid var(--gold)}
+nav .logo{font-family:'Bangers';font-size:1.8rem;color:var(--gold);text-shadow:3px 3px 0 var(--pink)}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a{color:#fff;text-decoration:none;font-weight:700;transition:.2s}
+nav a:hover{color:var(--gold);text-shadow:0 0 10px var(--gold)}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;padding:100px 5% 40px}
+.rays{position:absolute;width:160vmax;height:160vmax;z-index:-1;opacity:.25;
+ background:repeating-conic-gradient(var(--gold) 0 6deg,transparent 6deg 18deg);animation:spin 40s linear infinite;
+ -webkit-mask:radial-gradient(circle,#000 0,transparent 60%);mask:radial-gradient(circle,#000 0,transparent 60%)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.part{font-family:'Bangers';color:var(--cyan);font-size:1.4rem;border:3px solid var(--cyan);padding:4px 16px;transform:skew(-10deg);margin-bottom:18px}
+h1{font-size:clamp(3rem,10vw,7.5rem);font-weight:900;line-height:1;transform:skew(-8deg) rotate(-3deg);
+ background:linear-gradient(180deg,#fff6a0,var(--gold) 45%,#ff8a00);-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(5px 5px 0 var(--pink)) drop-shadow(10px 10px 0 var(--ink));animation:pose 3s ease-in-out infinite}
+@keyframes pose{50%{transform:skew(-8deg) rotate(-1deg) scale(1.04)}}
+.sub{font-family:'Bangers';font-size:clamp(1.5rem,4vw,2.6rem);margin-top:22px;color:#fff;text-shadow:3px 3px 0 var(--purple)}
+.menacing{position:absolute;font-size:4rem;font-weight:900;color:#c77dff;text-shadow:3px 3px 0 var(--ink);animation:float 2.4s ease-in-out infinite;pointer-events:none}
+@keyframes float{0%,100%{transform:translateY(0) skew(-10deg);opacity:.9}50%{transform:translateY(-18px) skew(-10deg);opacity:.4}}
+.btn{display:inline-block;margin-top:36px;padding:14px 38px;font-family:'Bangers';font-size:1.6rem;color:var(--ink);background:var(--gold);
+ border:4px solid var(--ink);box-shadow:6px 6px 0 var(--pink);transform:skew(-10deg);text-decoration:none;transition:.15s}
+.btn:hover{transform:skew(-10deg) translate(-3px,-3px);box-shadow:10px 10px 0 var(--pink)}
+
+section{padding:100px 6%;max-width:1200px;margin:auto}
+.title{font-family:'Bangers';font-size:clamp(2.4rem,6vw,4rem);color:var(--gold);text-shadow:4px 4px 0 var(--pink),8px 8px 0 var(--ink);transform:skew(-8deg);margin-bottom:40px}
+.title small{display:block;font-family:'Noto Sans TC';font-size:1.1rem;color:var(--cyan);text-shadow:none;letter-spacing:4px}
+
+/* panel */
+.panel{background:rgba(255,255,255,.07);border:4px solid #fff;box-shadow:10px 10px 0 var(--ink),0 0 30px rgba(255,46,136,.3);
+ backdrop-filter:blur(8px);padding:34px;position:relative;clip-path:polygon(0 0,100% 2%,98% 100%,2% 97%)}
+.about{display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:center}
+.avatar{width:260px;height:320px;background:linear-gradient(160deg,var(--pink),var(--purple));border:5px solid var(--gold);
+ display:flex;align-items:center;justify-content:center;font-size:7rem;font-weight:900;color:var(--gold);text-shadow:5px 5px 0 var(--ink);
+ clip-path:polygon(8% 0,100% 4%,92% 100%,0 95%);animation:pose 4s ease-in-out infinite}
+.about p{font-size:1.15rem;line-height:2}
+.hl{color:var(--gold);font-weight:900}
+.bubble{display:inline-block;background:#fff;color:var(--ink);font-weight:900;padding:10px 20px;border-radius:30px;border:3px solid var(--ink);margin-top:16px;position:relative}
+.bubble::after{content:"";position:absolute;left:24px;bottom:-14px;border:10px solid transparent;border-top-color:#fff}
+
+/* stand stats */
+.stand{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hex{width:100%;max-width:380px;margin:auto;display:block}
+.stat{display:flex;justify-content:space-between;padding:10px 0;border-bottom:2px dashed rgba(255,255,255,.3);font-weight:700}
+.stat b{font-family:'Bangers';font-size:1.6rem;color:var(--gold)}
+.standname{font-family:'Bangers';font-size:2.4rem;color:var(--cyan);text-shadow:3px 3px 0 var(--purple)}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+.card{background:linear-gradient(160deg,rgba(91,26,140,.8),rgba(26,6,48,.9));border:4px solid var(--gold);padding:28px;
+ box-shadow:8px 8px 0 var(--pink);transform:skew(-3deg);transition:.25s;cursor:pointer}
+.card:hover{transform:skew(-3deg) translateY(-10px) rotate(-1deg);box-shadow:14px 14px 0 var(--cyan)}
+.card .ic{font-size:2.8rem}
+.card h3{font-size:1.4rem;margin:10px 0;color:var(--gold)}
+.card p{line-height:1.7;color:#e8dcff}
+.bar{height:12px;background:rgba(255,255,255,.15);margin-top:14px;border:2px solid var(--ink)}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--gold));transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+
+/* timeline */
+.tl{border-left:5px solid var(--gold);padding-left:30px}
+.tl div{position:relative;margin-bottom:34px}
+.tl div::before{content:"";position:absolute;left:-43px;top:4px;width:20px;height:20px;background:var(--pink);border:4px solid var(--gold);transform:rotate(45deg)}
+.tl h3{color:var(--cyan);font-size:1.3rem}
+.tbc{font-family:'Bangers';font-size:2rem;display:inline-block;margin-top:20px;padding:6px 18px;color:#d9c08a;border:3px solid #d9c08a;transform:skew(-10deg)}
+
+footer{text-align:center;padding:50px;border-top:3px solid var(--gold);background:rgba(0,0,0,.4)}
+footer .bangers{font-size:2rem;color:var(--gold)}
+
+.reveal{opacity:0;transform:translateY(50px);transition:.8s}
+.reveal.show{opacity:1;transform:none}
+.fx{position:fixed;pointer-events:none;font-family:'Bangers';font-size:2.4rem;color:var(--gold);text-shadow:3px 3px 0 var(--pink);z-index:99;animation:pop .8s forwards}
+@keyframes pop{from{transform:scale(.3) rotate(-20deg);opacity:1}to{transform:scale(1.6) translateY(-40px) rotate(10deg);opacity:0}}
+
+@media(max-width:780px){nav ul{display:none}.about,.stand{grid-template-columns:1fr}.avatar{margin:auto}}
+</style>
+</head>
+<body>
+<nav><div class="logo">YIHAO'S ADVENTURE</div>
+<ul><li><a href="#about">關於我</a></li><li><a href="#stand">替身</a></li><li><a href="#skills">技能</a></li><li><a href="#journey">旅程</a></li></ul></nav>
+
+<header class="hero">
+  <div class="rays"></div>
+  <span class="menacing" style="top:18%;left:8%">ゴ</span>
+  <span class="menacing" style="top:30%;left:14%;animation-delay:.5s">ゴ</span>
+  <span class="menacing" style="top:22%;right:10%;animation-delay:.9s">ゴ</span>
+  <span class="menacing" style="top:60%;right:6%;animation-delay:1.3s">ゴ</span>
+  <span class="menacing" style="bottom:12%;left:6%;animation-delay:1.7s">ゴ</span>
+  <div class="part">PART ∞ : DIGITAL BUSINESS</div>
+  <h1>陳亦豪</h1>
+  <p class="sub">の 奇 妙 冒 險 — CHEN YI-HAO'S BIZARRE ADVENTURE</p>
+  <a href="#about" class="btn" id="startBtn">冒險開始！ゴゴゴ</a>
+</header>
+
+<main>
+<section id="about" class="reveal">
+  <h2 class="title">WHO AM I?<small>關於我</small></h2>
+  <div class="panel about">
+    <div class="avatar">豪</div>
+    <div>
+      <p>我是 <span class="hl">陳亦豪</span>，現就讀位於新北中和、超讚的 <span class="hl">南山中學</span>！</p>
+      <p>我對 <span class="hl">商業經營</span>、<span class="hl">電子商務</span> 與 <span class="hl">智慧科技</span> 充滿熱情與好奇。</p>
+      <p>在 <span class="hl">智光商工</span> 的課程中，我正努力學習文書處理、打字指法、金融專業與網頁開發，期待自己一步步成長為 <span class="hl">全方位的數位商管跨領域人才</span>！</p>
+      <div class="bubble">「我、陳亦豪，有一個夢想！」</div>
+    </div>
+  </div>
+</section>
+
+<section id="stand" class="reveal">
+  <h2 class="title">STAND STATS<small>替身能力面板</small></h2>
+  <div class="panel stand">
+    <svg class="hex" viewBox="0 0 300 300">
+      <g fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5">
+        <polygon points="150,20 263,85 263,215 150,280 37,215 37,85"/>
+        <polygon points="150,62 227,106 227,194 150,238 73,194 73,106"/>
+        <polygon points="150,105 189,128 189,172 150,195 111,172 111,128"/>
+      </g>
+      <polygon points="150,28 255,90 240,202 150,250 60,202 48,92" fill="rgba(255,46,136,.5)" stroke="#ffd23f" stroke-width="3"/>
+      <g font-family="Bangers" font-size="16" fill="#ffd23f" text-anchor="middle">
+        <text x="150" y="14">熱情 A</text><text x="282" y="82">學習 A</text><text x="282" y="228">科技 B</text>
+        <text x="150" y="298">商業 A</text><text x="18" y="228">耐力 B</text><text x="18" y="82">成長性 A</text>
+      </g>
+    </svg>
+    <div>
+      <div class="standname">『DIGITAL GOLD EXPERIENCE』</div>
+      <p style="margin:10px 0 20px;color:#e8dcff">替身使者：陳亦豪 — 能將商業點子注入「數位生命」，讓創意化為真實的電商與網頁！</p>
+      <div class="stat">破壞力（打字速度）<b>A</b></div>
+      <div class="stat">速度（學習力）<b>A</b></div>
+      <div class="stat">射程距離（跨領域）<b>A</b></div>
+      <div class="stat">持續力（熱情）<b>A</b></div>
+      <div class="stat">精密度（文書處理）<b>B</b></div>
+      <div class="stat">成長性<b>∞</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2 class="title">SKILLS<small>修練中的能力</small></h2>
+  <div class="grid">
+    <div class="card"><div class="ic">📝</div><h3>文書處理</h3><p>Word、Excel 排版與資料整理，打造專業文件。</p><div class="bar"><i data-w="80%"></i></div></div>
+    <div class="card"><div class="ic">⌨️</div><h3>打字指法</h3><p>歐拉歐拉歐拉！正確指法，指尖如替身般高速連打。</p><div class="bar"><i data-w="85%"></i></div></div>
+    <div class="card"><div class="ic">💰</div><h3>金融專業</h3><p>學習金融知識與理財觀念，為商業經營打下基礎。</p><div class="bar"><i data-w="70%"></i></div></div>
+    <div class="card"><div class="ic">💻</div><h3>網頁開發</h3><p>HTML、CSS、JavaScript，親手打造屬於自己的網站。</p><div class="bar"><i data-w="72%"></i></div></div>
+    <div class="card"><div class="ic">🛒</div><h3>電子商務</h3><p>探索網路行銷與線上商店的經營之道。</p><div class="bar"><i data-w="65%"></i></div></div>
+    <div class="card"><div class="ic">🤖</div><h3>智慧科技</h3><p>對 AI 與新科技充滿好奇，持續探索未來應用。</p><div class="bar"><i data-w="68%"></i></div></div>
+  </div>
+</section>
+
+<section id="journey" class="reveal">
+  <h2 class="title">MY JOURNEY<small>冒險旅程</small></h2>
+  <div class="panel">
+    <div class="tl">
+      <div><h3>第一章 ── 覺醒</h3><p>在南山中學發現自己對商業與科技的熱情。</p></div>
+      <div><h3>第二章 ── 修練</h3><p>在智光商工課程中鍛鍊文書處理、打字、金融與網頁開發。</p></div>
+      <div><h3>第三章 ── 進化</h3><p>結合商管與數位技能，挑戰電子商務與智慧科技專題。</p></div>
+      <div><h3>最終章 ── 黃金之風</h3><p>成為全方位的數位商管跨領域人才！</p></div>
+    </div>
+    <div class="tbc">TO BE CONTINUED ⟶</div>
+  </div>
+</section>
+</main>
+
+<footer><div class="bangers">ARRIVEDERCI!</div><p>© 2026 陳亦豪 Chen Yi-Hao｜奇妙冒險持續進行中</p></footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');
+ e.target.querySelectorAll('.bar i').forEach(b=>b.style.width=b.dataset.w)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const words=['ORA!','MUDA!','ゴゴゴ','ドドド','WRYYY!'];
+document.addEventListener('click',e=>{const s=document.createElement('span');s.className='fx';
+ s.textContent=words[Math.floor(Math.random()*words.length)];s.style.left=(e.clientX-40)+'px';s.style.top=(e.clientY-30)+'px';
+ document.body.appendChild(s);setTimeout(()=>s.remove(),800)});
+</script>
+</body>
+</html>
